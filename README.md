@@ -17,9 +17,11 @@ Users should be able to:
 
 - View the optimal layout for the component depending on their device's screen size: Mobile, tablet and desktop sizes
 
-### Screenshot
+### Screenshots
 
 ![](/img/screenshot.png)
+
+![](/img/screenshot2.png)
 
 ## My process
 
