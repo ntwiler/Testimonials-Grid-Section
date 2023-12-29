@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+:root {
+  --color-moderate-violet: #7541c8;
+  --color-grayish-blue: #48556a;
+  --color-blackish-blue: #19202d;
+  --color-white: #ffffff;
+  --color-light-gray: #cfcfcf;
+  --color-light-grayish-blue: #ecf2f8;
+  /*
+  Note for text colors:
+  1. "Verified Graduate" has the same color as the person's name with 50% opacity
+  2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
+  */
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap; /*for mobile-first*/
+  justify-content: center;
+  align-items: center;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 0.8125rem;
+  background-color: var(--color-light-grayish-blue);
+}
+
+.container {
+  padding: 4.44rem 1.5rem;
+}
+
+.block {
+  width: 20.4375rem;
+  height: 27.75rem;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+}
+
+.block.first {
+  background-color: var(--color-moderate-violet);
+  position: relative;
+  z-index: -2;
+}
+.block.second {
+  background-color: var(--color-grayish-blue);
+  margin-top: 1.5rem;
+  height: 15rem;
+}
+.block.third {
+  background-color: var(--color-white);
+  margin-top: 1.5rem;
+  height: 13.875rem;
+}
+.block.fourth {
+  background-color: var(--color-blackish-blue);
+  margin-top: 1.5rem;
+  height: 24rem;
+}
+.block.fifth {
+  background-color: var(--color-white);
+  margin-top: 1.5rem;
+  height: 27.375rem;
+}
+
+.profile-img {
+  width: 1.75rem;
+  height: 1.75rem;
+  flex-shrink: 0;
+  border-radius: 1.75rem;
+}
+
+.profile-img.purple {
+  border: 2px solid #a775f1;
+}
+
+.figure {
+  position: absolute;
+  margin-top: -3.4rem;
+  padding-left: 12rem;
+  z-index: -1;
+}
+
+.profile-presentation {
+  display: flex;
+  align-items: center;
+  gap: 1.06rem;
+  padding-top: 1.62rem;
+  padding-left: 2rem;
+}
+
+.name {
+  color: var(--color-white);
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 0.8125rem;
+}
+.name.dark {
+  color: var(--color-blackish-blue);
+}
+
+.sub-name {
+  color: var(--color-white);
+  font-size: 0.6875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 0.6875rem;
+  opacity: 0.5;
+}
+.sub-name.dark {
+  color: var(--color-blackish-blue);
+}
+
+.title {
+  padding-top: 1.13rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: var(--color-white);
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.title.dark {
+  color: var(--color-blackish-blue);
+}
+
+.paragraph {
+  padding: 2.5rem 3rem 2rem 2rem;
+  color: var(--color-light-gray);
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.125rem;
+  opacity: 0.7;
+}
+.paragraph.others {
+  padding: 1rem 2rem 2rem 2rem;
+  color: var(--color-white);
+}
+.paragraph.others.dark {
+  color: var(--color-blackish-blue);
+}
