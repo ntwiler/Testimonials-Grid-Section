@@ -102,7 +102,7 @@ body {
   line-height: 0.8125rem;
 }
 .name.dark {
-  color: var(--color-blackish-blue);
+  color: var(--color-grayish-blue);
 }
 
 .sub-name {
@@ -114,7 +114,7 @@ body {
   opacity: 0.5;
 }
 .sub-name.dark {
-  color: var(--color-blackish-blue);
+  color: var(--color-grayish-blue);
 }
 
 .title {
@@ -128,7 +128,10 @@ body {
   line-height: normal;
 }
 .title.dark {
-  color: var(--color-blackish-blue);
+  color: var(--color-grayish-blue);
+}
+.title.light {
+  color: var(--color-light-grayish-blue);
 }
 
 .paragraph {
@@ -145,5 +148,5 @@ body {
   color: var(--color-white);
 }
 .paragraph.others.dark {
-  color: var(--color-blackish-blue);
+  color: var(--color-grayish-blue);
 }
